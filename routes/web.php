@@ -12,10 +12,13 @@
 */
 
 
-// Route::get('/', function () {
-// 	return view('welcome');
-// });
+// esta vista desde el layout de admin
+Route::get('admin/login', function () {
+    return view('login');
+});
 
+
+// vistas desde el front
 Route::view('/', 'welcome');
 Auth::routes();
 
